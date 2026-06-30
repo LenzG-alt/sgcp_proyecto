@@ -1,0 +1,230 @@
+# Brazilian Portuguese translations for SGCP backend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Language-Team: Portuguese (Brazil)\n"
+
+# --- Model: base.py ---
+msgid "El telefono solo puede contener digitos y simbolos basicos."
+msgstr "O telefone so pode conter digitos e simbolos basicos."
+
+msgid "El telefono debe contener al menos 7 digitos."
+msgstr "O telefone deve conter pelo menos 7 digitos."
+
+# --- Model: usuario.py ---
+msgid "Cliente"
+msgstr "Cliente"
+
+msgid "Estilista"
+msgstr "Estilista"
+
+msgid "Administrador"
+msgstr "Administrador"
+
+msgid "Recepcionista"
+msgstr "Recepcionista"
+
+msgid "Rol del usuario en el sistema"
+msgstr "Papel do usuario no sistema"
+
+msgid "Peluqueria asignada (requerido para rol estilista)"
+msgstr "Salao atribuido (obrigatorio para o papel de estilista)"
+
+msgid "Especialidad del estilista (ej: colorista, barbero)"
+msgstr "Especialidade do estilista (ex: colorista, barbeiro)"
+
+msgid "Un estilista debe tener una peluqueria asignada."
+msgstr "Um estilista deve ter um salao atribuido."
+
+msgid "Usuario"
+msgstr "Usuario"
+
+msgid "Usuarios"
+msgstr "Usuarios"
+
+# --- Model: servicio.py ---
+msgid "El precio debe ser mayor que cero."
+msgstr "O preco deve ser maior que zero."
+
+msgid "La duracion debe ser mayor que cero."
+msgstr "A duracao deve ser maior que zero."
+
+# --- Model: horario.py ---
+msgid "La hora de fin debe ser mayor que la hora de inicio."
+msgstr "O horario de termino deve ser maior que o horario de inicio."
+
+msgid "El horario se cruza com otro registro activo del mismo estilista en ese dia."
+msgstr "O horario conflita com outro registro ativo do mesmo estilista nesse dia."
+
+msgid "Estilista al que pertenece este horario"
+msgstr "Estilista a quem este horario pertence"
+
+msgid "Dia de la semana (ej: lunes, martes)"
+msgstr "Dia da semana (ex: segunda-feira, terca-feira)"
+
+msgid "Hora de inicio del turno"
+msgstr "Horario de inicio do turno"
+
+msgid "Hora de fin del turno"
+msgstr "Horario de termino do turno"
+
+msgid "Indica si este horario esta vigente"
+msgstr "Indica se este horario esta vigente"
+
+msgid "Horario"
+msgstr "Horario"
+
+msgid "Horarios"
+msgstr "Horarios"
+
+# --- Model: cita.py ---
+msgid "Pendiente"
+msgstr "Pendente"
+
+msgid "Confirmada"
+msgstr "Confirmada"
+
+msgid "Completada"
+msgstr "Concluida"
+
+msgid "Cancelada"
+msgstr "Cancelada"
+
+msgid "Cliente que reserva la cita"
+msgstr "Cliente que faz a reserva"
+
+msgid "Estilista asignado a la cita"
+msgstr "Estilista designado para o agendamento"
+
+msgid "Servicio reservado"
+msgstr "Servico reservado"
+
+msgid "Fecha de la cita"
+msgstr "Data do agendamento"
+
+msgid "Hora de inicio"
+msgstr "Horario de inicio"
+
+msgid "Hora de fin"
+msgstr "Horario de termino"
+
+msgid "Estado actual de la cita"
+msgstr "Status atual do agendamento"
+
+msgid "Notas adicionales sobre la cita"
+msgstr "Notas adicionais sobre o agendamento"
+
+msgid "Estado de cita no valido."
+msgstr "Status de agendamento invalido."
+
+msgid "La duracion de la cita debe coincidir con la duracion del servicio."
+msgstr "A duracao do agendamento deve corresponder a duracao do servico."
+
+msgid "El estilista y el servicio deben pertenecer a la misma peluqueria."
+msgstr "O estilista e o servico devem pertencer ao mesmo salao."
+
+msgid "La cita se cruza con otra reserva del estilista."
+msgstr "O agendamento conflita com outra reserva do estilista."
+
+msgid "Cita"
+msgstr "Agendamento"
+
+msgid "Citas"
+msgstr "Agendamentos"
+
+# --- Serializers ---
+msgid "Contrasena del usuario (minimo 6 caracteres). Solo al crear."
+msgstr "Senha do usuario (minimo 6 caracteres). Apenas ao criar."
+
+msgid "El estilista seleccionado no existe o no esta disponible."
+msgstr "O estilista selecionado nao existe ou nao esta disponivel."
+
+msgid "El servicio seleccionado no existe."
+msgstr "O servico selecionado nao existe."
+
+msgid "No se pueden crear citas en fechas pasadas."
+msgstr "Nao e possivel criar agendamentos em datas passadas."
+
+msgid "El estilista seleccionado no pertenece a la misma sucursal donde se ofrece este servicio."
+msgstr "O estilista selecionado nao pertence a mesma filial onde este servico e oferecido."
+
+msgid "El estilista no tiene horario disponible el dia {dia_semana}."
+msgstr "O estilista nao tem horario disponivel no dia {dia_semana}."
+
+msgid "La hora seleccionada esta fuera del horario de atencion del estilista."
+msgstr "O horario selecionado esta fora do horario de atendimento do estilista."
+
+msgid "El estilista ya tiene una cita asignada entre las {hora} y {hora_fin}."
+msgstr "O estilista ja tem um agendamento entre {hora} e {hora_fin}."
+
+msgid "El cliente seleccionado no existe o no esta activo."
+msgstr "O cliente selecionado nao existe ou nao esta ativo."
+
+# --- Auth views ---
+msgid "Tu cuenta esta desactivada. Contacta al administrador."
+msgstr "Sua conta esta desativada. Entre em contato com o administrador."
+
+msgid "La contrasena debe tener al menos 6 caracteres."
+msgstr "A senha deve ter pelo menos 6 caracteres."
+
+msgid "Ya existe una cuenta con este correo electronico."
+msgstr "Ja existe uma conta com este e-mail."
+
+msgid "Este nombre de usuario ya esta en uso."
+msgstr "Este nome de usuario ja esta em uso."
+
+msgid "Las contrasenas no coinciden."
+msgstr "As senhas nao coincidem."
+
+# --- Views ---
+msgid "Estilista no encontrado."
+msgstr "Estilista nao encontrado."
+
+msgid "Cita no encontrada."
+msgstr "Agendamento nao encontrado."
+
+msgid "No se puede cancelar una cita en estado \"{estado}\". Solo se pueden cancelar citas pendientes o confirmadas."
+msgstr "Nao e possivel cancelar um agendamento com status \"{estado}\". Apenas agendamentos pendentes ou confirmados podem ser cancelados."
+
+msgid "No se pueden cancelar citas de fechas pasadas."
+msgstr "Nao e possivel cancelar agendamentos de datas passadas."
+
+msgid "Motivo de cancelacion: "
+msgstr "Motivo do cancelamento: "
+
+# --- Admin ---
+msgid "Credenciales"
+msgstr "Credenciais"
+
+msgid "Datos personales"
+msgstr "Dados pessoais"
+
+msgid "Rol y estado"
+msgstr "Papel e status"
+
+msgid "Estado"
+msgstr "Status"
+
+# --- Days of week ---
+msgid "Monday"
+msgstr "Segunda-feira"
+
+msgid "Tuesday"
+msgstr "Terca-feira"
+
+msgid "Wednesday"
+msgstr "Quarta-feira"
+
+msgid "Thursday"
+msgstr "Quinta-feira"
+
+msgid "Friday"
+msgstr "Sexta-feira"
+
+msgid "Saturday"
+msgstr "Sabado"
+
+msgid "Sunday"
+msgstr "Domingo"

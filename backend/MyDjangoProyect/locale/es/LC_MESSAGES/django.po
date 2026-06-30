@@ -1,0 +1,230 @@
+# Spanish (default) translations for SGCP backend
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Language-Team: Spanish\n"
+
+# --- Model: base.py ---
+msgid "El telefono solo puede contener digitos y simbolos basicos."
+msgstr "El telefono solo puede contener digitos y simbolos basicos."
+
+msgid "El telefono debe contener al menos 7 digitos."
+msgstr "El telefono debe contener al menos 7 digitos."
+
+# --- Model: usuario.py ---
+msgid "Cliente"
+msgstr "Cliente"
+
+msgid "Estilista"
+msgstr "Estilista"
+
+msgid "Administrador"
+msgstr "Administrador"
+
+msgid "Recepcionista"
+msgstr "Recepcionista"
+
+msgid "Rol del usuario en el sistema"
+msgstr "Rol del usuario en el sistema"
+
+msgid "Peluqueria asignada (requerido para rol estilista)"
+msgstr "Peluqueria asignada (requerido para rol estilista)"
+
+msgid "Especialidad del estilista (ej: colorista, barbero)"
+msgstr "Especialidad del estilista (ej: colorista, barbero)"
+
+msgid "Un estilista debe tener una peluqueria asignada."
+msgstr "Un estilista debe tener una peluqueria asignada."
+
+msgid "Usuario"
+msgstr "Usuario"
+
+msgid "Usuarios"
+msgstr "Usuarios"
+
+# --- Model: servicio.py ---
+msgid "El precio debe ser mayor que cero."
+msgstr "El precio debe ser mayor que cero."
+
+msgid "La duracion debe ser mayor que cero."
+msgstr "La duracion debe ser mayor que cero."
+
+# --- Model: horario.py ---
+msgid "La hora de fin debe ser mayor que la hora de inicio."
+msgstr "La hora de fin debe ser mayor que la hora de inicio."
+
+msgid "El horario se cruza con otro registro activo del mismo estilista en ese dia."
+msgstr "El horario se cruza con otro registro activo del mismo estilista en ese dia."
+
+msgid "Estilista al que pertenece este horario"
+msgstr "Estilista al que pertenece este horario"
+
+msgid "Dia de la semana (ej: lunes, martes)"
+msgstr "Dia de la semana (ej: lunes, martes)"
+
+msgid "Hora de inicio del turno"
+msgstr "Hora de inicio del turno"
+
+msgid "Hora de fin del turno"
+msgstr "Hora de fin del turno"
+
+msgid "Indica si este horario esta vigente"
+msgstr "Indica si este horario esta vigente"
+
+msgid "Horario"
+msgstr "Horario"
+
+msgid "Horarios"
+msgstr "Horarios"
+
+# --- Model: cita.py ---
+msgid "Pendiente"
+msgstr "Pendiente"
+
+msgid "Confirmada"
+msgstr "Confirmada"
+
+msgid "Completada"
+msgstr "Completada"
+
+msgid "Cancelada"
+msgstr "Cancelada"
+
+msgid "Cliente que reserva la cita"
+msgstr "Cliente que reserva la cita"
+
+msgid "Estilista asignado a la cita"
+msgstr "Estilista asignado a la cita"
+
+msgid "Servicio reservado"
+msgstr "Servicio reservado"
+
+msgid "Fecha de la cita"
+msgstr "Fecha de la cita"
+
+msgid "Hora de inicio"
+msgstr "Hora de inicio"
+
+msgid "Hora de fin"
+msgstr "Hora de fin"
+
+msgid "Estado actual de la cita"
+msgstr "Estado actual de la cita"
+
+msgid "Notas adicionales sobre la cita"
+msgstr "Notas adicionales sobre la cita"
+
+msgid "Estado de cita no valido."
+msgstr "Estado de cita no valido."
+
+msgid "La duracion de la cita debe coincidir con la duracion del servicio."
+msgstr "La duracion de la cita debe coincidir con la duracion del servicio."
+
+msgid "El estilista y el servicio deben pertenecer a la misma peluqueria."
+msgstr "El estilista y el servicio deben pertenecer a la misma peluqueria."
+
+msgid "La cita se cruza con otra reserva del estilista."
+msgstr "La cita se cruza con otra reserva del estilista."
+
+msgid "Cita"
+msgstr "Cita"
+
+msgid "Citas"
+msgstr "Citas"
+
+# --- Serializers ---
+msgid "Contrasena del usuario (minimo 6 caracteres). Solo al crear."
+msgstr "Contrasena del usuario (minimo 6 caracteres). Solo al crear."
+
+msgid "El estilista seleccionado no existe o no esta disponible."
+msgstr "El estilista seleccionado no existe o no esta disponible."
+
+msgid "El servicio seleccionado no existe."
+msgstr "El servicio seleccionado no existe."
+
+msgid "No se pueden crear citas en fechas pasadas."
+msgstr "No se pueden crear citas en fechas pasadas."
+
+msgid "El estilista seleccionado no pertenece a la misma sucursal donde se ofrece este servicio."
+msgstr "El estilista seleccionado no pertenece a la misma sucursal donde se ofrece este servicio."
+
+msgid "El estilista no tiene horario disponible el dia {dia_semana}."
+msgstr "El estilista no tiene horario disponible el dia {dia_semana}."
+
+msgid "La hora seleccionada esta fuera del horario de atencion del estilista."
+msgstr "La hora seleccionada esta fuera del horario de atencion del estilista."
+
+msgid "El estilista ya tiene una cita asignada entre las {hora} y {hora_fin}."
+msgstr "El estilista ya tiene una cita asignada entre las {hora} y {hora_fin}."
+
+msgid "El cliente seleccionado no existe o no esta activo."
+msgstr "El cliente seleccionado no existe o no esta activo."
+
+# --- Auth views ---
+msgid "Tu cuenta esta desactivada. Contacta al administrador."
+msgstr "Tu cuenta esta desactivada. Contacta al administrador."
+
+msgid "La contrasena debe tener al menos 6 caracteres."
+msgstr "La contrasena debe tener al menos 6 caracteres."
+
+msgid "Ya existe una cuenta con este correo electronico."
+msgstr "Ya existe una cuenta con este correo electronico."
+
+msgid "Este nombre de usuario ya esta en uso."
+msgstr "Este nombre de usuario ya esta en uso."
+
+msgid "Las contrasenas no coinciden."
+msgstr "Las contrasenas no coinciden."
+
+# --- Views ---
+msgid "Estilista no encontrado."
+msgstr "Estilista no encontrado."
+
+msgid "Cita no encontrada."
+msgstr "Cita no encontrada."
+
+msgid "No se puede cancelar una cita en estado \"{estado}\". Solo se pueden cancelar citas pendientes o confirmadas."
+msgstr "No se puede cancelar una cita en estado \"{estado}\". Solo se pueden cancelar citas pendientes o confirmadas."
+
+msgid "No se pueden cancelar citas de fechas pasadas."
+msgstr "No se pueden cancelar citas de fechas pasadas."
+
+msgid "Motivo de cancelacion: "
+msgstr "Motivo de cancelacion: "
+
+# --- Admin ---
+msgid "Credenciales"
+msgstr "Credenciales"
+
+msgid "Datos personales"
+msgstr "Datos personales"
+
+msgid "Rol y estado"
+msgstr "Rol y estado"
+
+msgid "Estado"
+msgstr "Estado"
+
+# --- Days of week ---
+msgid "Monday"
+msgstr "Lunes"
+
+msgid "Tuesday"
+msgstr "Martes"
+
+msgid "Wednesday"
+msgstr "Miercoles"
+
+msgid "Thursday"
+msgstr "Jueves"
+
+msgid "Friday"
+msgstr "Viernes"
+
+msgid "Saturday"
+msgstr "Sabado"
+
+msgid "Sunday"
+msgstr "Domingo"
